@@ -7,19 +7,23 @@
     android:padding="10dp"
     android:clickable="true"
     android:focusable="true"
-    android:background="?android:attr/selectableItemBackground">
+    android:background="@drawable/ripple_custom">
 
     <TextView
         android:textSize="24dp"
         android:id="@+id/recyclerview_item_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="title"/>
+        android:text="title"
+        android:transitionName="text1"/>
 
     <TextView
         android:textSize="16dp"
         android:id="@+id/recyclerview_item_description"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:transitionName="text2"
         android:text="description"/>
 </LinearLayout>
+
+    <!--android:background="@drawable/ripple_custom"-->
